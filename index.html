@@ -1,0 +1,229 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>RNZ - Grocery & Meat</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link rel="shortcut icon" href="images/FinalImages/favicon(1).ico" type="image/x-icon">
+<link rel="icon" href="images/FinalImages/favicon(1).ico" type="image/x-icon">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--[if IE]>
+<script scr="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!--[if mozilla firefox]>
+<script scr="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<link rel="stylesheet" href="fonts.css" media="screen"/>
+
+<link href="tooplate_style.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript" src="js/jquery-1.6.3.min.js" ></script>
+<script type="text/javascript" src="js/jquery-ui.min.js" ></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#featured > ul").tabs({fx:{opacity: "toggle"}}).tabs("rotate", 5000, true);
+	});
+</script>
+
+<link rel="stylesheet" type="text/css" href="css/ddsmoothmenu.css" />
+
+<script type="text/javascript" src="js/ddsmoothmenu.js">
+
+</script>
+
+<script type="text/javascript">
+ddsmoothmenu.init({
+	mainmenuid: "tooplate_menu", //menu DIV id
+	orientation: 'h', //Horizontal or vertical menu: Set to "h" or "v"
+	classname: 'ddsmoothmenu', //class added to menu's outer DIV
+	//customtheme: ["#1c5a80", "#18374a"],
+	contentsource: "markup" //"markup" or ["container_id", "path_to_menu_file"]
+})
+</script>
+
+<link rel="stylesheet" href="css/slimbox2.css" type="text/css" media="screen" /> 
+<script type="text/JavaScript" src="js/slimbox2.js"></script> 
+<!-- include extern jQuery file but fall back to local file if extern one fails to load !-->
+<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+<script type="text/javascript">window.jQuery || document.write('<script type="text\/javascript" src="js\/1.7.2.jquery.min"><\/script>')
+</script>
+
+<script src="lightbox/js/lightbox.js">
+</script>
+
+<script language="JavaScript1.2">
+var howOften = 8; //number often in seconds to rotate
+var current = 0; //start the counter at 0
+var ns6 = document.getElementById&&!document.all; //detect netscape 6
+
+// place your images, text, etc in the array elements here
+var items = new Array();
+    items[0]="<a><img alt='' src='images/FinalImages/slider1a.png' /></a>";
+    items[1]="<a><img alt='' src='images/FinalImages/slider1.png' /></a>"; 
+    items[2]="<a><img alt='' src='images/FinalImages/slider2.png' /></a>";
+	items[3]="<a><img alt='' src='images/FinalImages/slider3.png' /></a>";
+	items[4]="<a><img alt='' src='images/FinalImages/slider4.png' /></a>";
+	items[5]="<a><img alt='' src='images/FinalImages/slider5.png' /></a>";
+	items[6]="<a><img alt='' src='images/FinalImages/slider6.png' /></a>";
+	items[7]="<a><img alt='' src='images/FinalImages/slider7.png' /></a>";
+
+
+function rotater() {
+    document.getElementById("placeholder").innerHTML = items[current];
+    current = (current==items.length-1) ? 0 : current + 1;
+    setTimeout("rotater()",howOften*450);
+}
+
+function rotater() {
+    if(document.layers) {
+        document.placeholderlayer.document.write(items[current]);
+        document.placeholderlayer.document.close();
+    }
+    if(ns6)document.getElementById("placeholderdiv").innerHTML=items[current]
+        if(document.all)
+            placeholderdiv.innerHTML=items[current];
+
+    current = (current==items.length-1) ? 0 : current + 1; //increment or reset
+    setTimeout("rotater()",howOften*450);
+}
+window.onload=rotater;
+//-->
+</script>
+
+</head>
+<body>
+<div id="tooplate_wrapper">
+<div id="tooplate_header">
+    	<div id="site_title">
+        	<a href="index.html"><img src="images/FinalImages/logo.png" width="225" height="75" />
+            <span>Your one-stop grocery & halal meat shop</span></a>
+        </div><!-- end of site_title -->
+        <div id="info">
+        <strong>4940 Joyce Street, Vancouver, BC V5R 4G6</strong></br></br>
+        Email: <a href="mailto:shoaeb@rnzmeat.ca?subject=Inquiry from website">shoaeb@rnzmeat.ca</a> | Shop Ph: <strong>778-379-7869</strong></br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Cell Ph: <strong>778-838-2786</strong></br>
+Website: <a href="www.rnzmeat.ca">www.rnzmeat.ca</a>
+        
+		</div> <!-- end of info -->
+   		</div> <!-- END of header -->
+    
+    
+    <div id="tooplate_middle"><span class="middle_bottom_frame"></span>
+        <div id="tooplate_menu" class="ddsmoothmenu">
+            <ul>
+                <li><a href="index.html"><span></span>Home</a></li>
+                <li><a href="about.html"><span></span>About Us</a></li>
+                <li><a href="products.html"><span></span>Products</a></li>
+                <li><a href="delivery.html"><span></span>Delivery Options</a></li>
+                <li><a href="contact.html"><span></span>Contact Us</a></li>
+            </ul>
+            <div class="clear"></div>
+        </div> <!-- end of tooplate_menu -->
+        
+        <ul id="social">
+            <li><a href="https://www.facebook.com/rnzmeat" target="new"><img src="images/facebook.png" alt="Facebook" /></a></li>
+            <li>&nbsp;&nbsp;<img src="images/FinalImages/halaal1.png" /></li>
+        </ul>
+        
+        <layer id="placeholderlayer"></layer>
+		<div id="placeholderdiv"></div>
+
+        <div class="clear"></div>
+	</div> <!-- END of middle -->
+    
+    <div id="tooplate_main"><span class="main_frame main_top_frame"></span><span class="main_frame main_bottom_frame"></span>
+    	<div class="content_wrapper content_mb_30">
+        	
+            
+<h2><em> Thank you for visiting our website </em></h2>
+<div id="content">
+<div id="halaal">
+<img src="images/FinalImages/halaal.png" />
+</div> <!-- end of halaal -->
+
+<p> RNZ, grocery and meat is a full service grocery store located in heart of Vancouver, British Columbia, in the Lower-Mainland. We specialize in Pakistani, Indian, Fujian and Mediterranian groceries and food including authentic spices, lentils, rice, flour, a wide variety of masalas, frozen food items, chilled beverages, fresh meat, cold-cuts, etc. </p>
+
+<p><strong>As soon as you walk through our doors, you’ll find yourself surrounded by everything that you ever wanted to remind you of home.</strong></p>
+
+<p>We stock every brand of spices, lentils, rice, flours and other items that you’re familiar with, and even those you might wish to try.</p>
+
+<p>Looking for the fresh cut meats? Look no further, because we stock a huge selection of beef, veal, mutton, chicken and turkey! We feel pride in saying that if you can’t find it on our shelves, we will get it for you! </p>
+
+<p>So visit us regularly and keep yourself up-to-date with everything South Asian! </p>
+
+</div> <!-- end of content -->
+
+</br>
+<hr>
+</br>
+
+<div class="contentAndSignupForm">
+<div id="signupContent">
+<p>Don't have time to shop? No problem! <a href="mailto:shoaeb@rnzmeat.ca?subject=Inquiry from website"><strong>Send us an email</strong></a> and we will have your order ready and waiting for you. Our website is the first of its kind - we are the first desi grocery store to offer our food ordering service online.</p>
+<p>We supply meat to other parts of BC like Prince George, Kamloops, Victoria, Hope through courier services.</p>
+</div> <!-- end of signupContent -->
+
+<div id="signupandlogo">
+
+<div id="newsletter">
+<h3>Get the latest deals!</h3>
+<form id="form1" name="form1" method="post" action="NLprocess.php">
+<p><strong>Email:</strong> <input type="text" name="email" size="30"></p>
+<p><input type="submit" value="Submit" name="Submit"></p>
+</form>
+</div> <!-- end of newsletter -->
+
+</div> <!-- end of signupandlogo -->
+
+</div> <!-- end of contentAndSignupForm -->
+
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+<hr>
+</br>
+		<div class="col_3 service_home">
+            <img src="images/FinalImages/eidulAdha.png" />
+            </div>
+                     
+            <div class="col_3 service_home">
+            <a href="delivery.html" target="new"><img src="images/FinalImages/deliveryService.png" /></a>
+            </div>
+            
+            <div class="col_3 no_margin_right service_home">
+            <img src="images/FinalImages/orderPh.png" />
+            </div>
+        </div>
+        
+        <div class="clear"></div>
+    	</div>
+
+	<div id="tooplate_footer">
+    <p>&copy; 2017 RNZMeat.ca &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+    
+        <div class="clear"></div>
+    </div> <!-- END of tooplate_footer -->
+</div> <!-- END of tooplate_wrapper -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-96126007-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>
